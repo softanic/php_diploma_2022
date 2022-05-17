@@ -1,0 +1,12 @@
+<?php
+session_start();
+$item_name=$_POST['item_name'];
+if(isset($_SESSION['bill']))
+{
+	array_push($_SESSION['bill'],$item_name);
+}
+else{
+	$_SESSION['bill']=[$item_name];
+}
+header('location:billing.php');
+?>
