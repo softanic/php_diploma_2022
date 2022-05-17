@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>title</title>
+        <title>title 1</title>
     </head>
     <body>
         <form action="save.php" method="get">
