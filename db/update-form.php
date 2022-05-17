@@ -9,11 +9,14 @@
 		$q="select * from users where user_id=$user_id";
 		$res=mysqli_query($link,$q);
 		$user=mysqli_fetch_array($res);
-		print_r($user);
+		//print_r($user);
  
 		?>
-		<form action="save.php" method="POST">
+		<form action="update-save.php" method="POST">
 			<table>
+				
+				
+						<input  type="hidden" name="user_id" value="<?php echo $user['user_id']; ?>">
 				
 				<tr>
 					<td>

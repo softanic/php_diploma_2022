@@ -3,7 +3,7 @@
 	
 	</head>
 	<body>
-		<form action="save.php" method="POST">
+		<form action="save.php" method="POST" enctype="multipart/form-data">
 			<table>
 				
 				<tr>
@@ -45,6 +45,14 @@
 					</td>
 					<td>
 						<input type="password" name="password">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Photo</label>
+					</td>
+					<td>
+						<input type="file" name="photo" accept="image/*">
 					</td>
 				</tr>
 				<tr>
